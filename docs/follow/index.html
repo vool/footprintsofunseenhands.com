@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/main.css" />
+
+    <script>
+      // Remove this script if you don't need the dark mode toggle
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+
+      const toggleDarkMode = function(){
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          localStorage.theme = 'light';
+        } else {
+          document.documentElement.classList.add('dark')
+          localStorage.theme = 'dark'
+        }
+      };
+
+      const forgetPref = function(){
+        localStorage.removeItem('theme')
+        window.location.reload();
+      }
+
+
+                // create a function to update the date and time
+                function updateDateTime() {
+                  // create a new `Date` object
+                  const now = new Date();
+                  const then = new Date();
+
+                  // update the `textContent` property of the `span` element with the `id` of `datetime`
+                  document.querySelector('#datetime').textContent = now.getTime() / 1000 | 0;
+                }
+
+                // call the `updateDateTime` function every second
+                setInterval(updateDateTime, 1000);
+
+
+      <!-- todo move this -->
+              tailwind.config = {
+                  theme: {
+                      extend: {
+                          fontFamily: {
+                              inter: ['Inter', 'sans-serif'],
+                          },
+                      },
+                  },
+              };
+
+
+    </script>
+  </head>
+  <body class="bg-stone-50 duration-500 flex flex-col min-h-screen">
+  <div class="container p-2 xmx-auto">
+      <div class="flex flex-row flex-wrap py-4">
+          <aside class="w-full smF:w-1/3 md:w-1/4 lg:w-1/2 px-2">
+              <div class="sticky top-0  w-full">
+<a href="/" class="flex flex-col font-semibold text-white font-outline text-7xl tracking-tight whitespace-pre">footprints
+of unseen
+hands</a>
+              </div>
+               <div class="sticky top-0 xpt-4  w-full    ">
+                   <!--<div class="sticky top-[100vh] p-4  w-full">-->
+                   <nav class="flex items-center justify-between flex-wrap px-5 py-3b gap-50">
+  
+  <ul class="flex items-center gap-3 flex-wrap">
+    
+      <li class="inline">
+        <a
+          href="/blog/"
+          class="uppercase text-sm py-1 px-2 rounded inline-block
+          
+            text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-700
+          ">
+          blog
+        </a>
+      </li>
+    
+      <li class="inline">
+        <a
+          href="/print/"
+          class="uppercase text-sm py-1 px-2 rounded inline-block
+          
+            text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-700
+          ">
+          prints
+        </a>
+      </li>
+    
+      <li class="inline">
+        <a
+          href="/tags/all/"
+          class="uppercase text-sm py-1 px-2 rounded inline-block
+          
+            text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-700
+          ">
+          tags
+        </a>
+      </li>
+    
+      <li class="inline">
+        <a
+          href="/follow/"
+          class="uppercase text-sm py-1 px-2 rounded inline-block
+          
+            bg-black text-white
+          ">
+          follow
+        </a>
+      </li>
+    
+
+  </ul>
+
+</nav>
+
+                </div>
+          </aside>
+          <main role="main" class="w-full sm:w-2/3 md:w-3/4 lg:w-1/2 pt-1 px-2">
+           <div class="">
+<!--
+<ul class=" p-4 border-pink-500 border-2 h-screen  flex flex-col space-y-2">
+     
+     <li class="p-3 border-purple-500 border-2 h-48 flex justify-center items-center font-semibold text-white font-outline text-5xl">
+     <a href="https://www.instagram.com/footprintsofunseenhands/">instagram</a></li>
+     
+     <li class="p-3 border-purple-500 border-2 h-48 flex justify-center items-center font-semibold text-white font-outline text-5xl">
+     <a href="https://mastodon.ie/@footprintsofunseenhands">mastodon</a></li>
+     
+     <li class="p-3 border-purple-500 border-2 h-48 flex justify-center items-center font-semibold text-white font-outline text-5xl">
+     <a href="https://bsky.app/profile/unseenhands.bsky.social">bluesky</a></li>
+     
+     <li class="p-3 border-purple-500 border-2 h-48 flex justify-center items-center font-semibold text-white font-outline text-5xl">
+     <a href="https://twitter.com">rss</a></li>
+     
+     <li class="p-3 border-purple-500 border-2 h-48 flex justify-center items-center font-semibold text-white font-outline text-5xl">
+     <a href="https://twitter.com">x</a></li>
+     
+</ul>
+-->
+
+<div class="p-4 h-screen  flex flex-col space-y-2">
+     
+     <a href="https://www.instagram.com/footprintsofunseenhands/" class="p-3 h-48 flex justify-center items-center font-semibold text-white font-outline text-5xl hover:yellow">instagram</a></li>
+     
+     <a href="https://mastodon.ie/@footprintsofunseenhands" class="p-3 h-48 flex justify-center items-center font-semibold text-white font-outline text-5xl hover:yellow">mastodon</a></li>
+     
+     <a href="https://bsky.app/profile/unseenhands.bsky.social" class="p-3 h-48 flex justify-center items-center font-semibold text-white font-outline text-5xl hover:yellow">bluesky</a></li>
+     
+     <a href="https://twitter.com" class="p-3 h-48 flex justify-center items-center font-semibold text-white font-outline text-5xl hover:yellow">rss</a></li>
+     
+     <a href="https://twitter.com" class="p-3 h-48 flex justify-center items-center font-semibold text-white font-outline text-5xl hover:yellow">x</a></li>
+     
+</div>
+</div>
+          </main>
+      </div>
+  </div>
+  <footer class="bg-white mt-auto py-4">
+      <div class="container p-4 text-slate mx-auto mb-2">
+          <div class="flex">
+              <!-- prints -->
+                <div class="flex-grow flex flex-col">
+                
+                  
+                  <a href="/003/">/003</a>
+                  
+                  <a href="/001/">/001</a>
+                  
+                  <a href="/000/">/000</a>
+                  
+                </div>
+                <!-- /prints -->
+                <!-- follow -->
+                  <div class="flex-grow flex flex-col">
+                    
+                    <a href="https://www.instagram.com/footprintsofunseenhands/" class="">instagram</a>
+                    
+                    <a href="https://mastodon.ie/@footprintsofunseenhands" class="">mastodon</a>
+                    
+                    <a href="https://bsky.app/profile/unseenhands.bsky.social" class="">bluesky</a>
+                    
+                    <a href="https://twitter.com" class="">rss</a>
+                    
+                    <a href="https://twitter.com" class="">x</a>
+                    
+                  </div>
+                  <!-- /follow -->
+                  <!-- mail -->
+                    <div class="flex-grow flex flex-col">
+                      <a href="mailto:qc@footprintsofunseenhands.com" >email</a>
+                    </div>
+                    <!-- /mail -->
+                  <!-- ts -->
+                <div class="flex-grow flex flex-col">
+                    <span id="datetime"></span>
+                </div>
+                <!-- /ts -->
+           </div>
+      </div>
+  </footer>
+
+  </body>
+</html>
