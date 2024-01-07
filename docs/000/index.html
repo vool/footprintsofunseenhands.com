@@ -30,7 +30,6 @@
         window.location.reload();
       }
 
-
                 // create a function to update the date and time
                 function updateDateTime() {
                   // create a new `Date` object
@@ -38,9 +37,10 @@
                   const then = new Date();
 
                   // update the `textContent` property of the `span` element with the `id` of `datetime`
-                  document.querySelector('#datetime').textContent = now.getTime() / 1000 | 0;
+                  document.querySelector('#datetime').textContent = 1704585600 - (now.getTime() / 1000 | 0) ;
                 }
 
+                console.log(1704585600;
                 // call the `updateDateTime` function every second
                 setInterval(updateDateTime, 1000);
 
@@ -131,7 +131,10 @@ hands</a>
 
 
 <time>03-01-24</time>
-<article><h3>What is Lorem Ipsum?</h3>
+<article><div class="group">
+  <p class="group-hover:text-red">afected element</p>
+</div>
+<h3>What is Lorem Ipsum?</h3>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 <h3>Why do we use it?</h3>
 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
@@ -190,26 +193,26 @@ hands</a>
                 <!-- follow -->
                   <div class="flex-grow flex flex-col">
                     
-                    <a href="https://www.instagram.com/footprintsofunseenhands/" class="">instagram</a>
+                    <a href="https://www.instagram.com/footprintsofunseenhands/" class="" rel="me">instagram</a>
                     
-                    <a href="https://mastodon.ie/@footprintsofunseenhands" class="">mastodon</a>
+                    <a href="https://mastodon.ie/@footprintsofunseenhands" class="" rel="me">mastodon</a>
                     
-                    <a href="https://bsky.app/profile/unseenhands.bsky.social" class="">bluesky</a>
+                    <a href="https://bsky.app/profile/unseenhands.bsky.social" class="" rel="me">bluesky</a>
                     
-                    <a href="https://twitter.com" class="">rss</a>
+                    <a href="https://twitter.com" class="" rel="me">rss</a>
                     
-                    <a href="https://twitter.com" class="">x</a>
+                    <a href="https://twitter.com" class="" rel="me">x</a>
                     
                   </div>
                   <!-- /follow -->
                   <!-- mail -->
                     <div class="flex-grow flex flex-col">
-                      <a href="mailto:qc@footprintsofunseenhands.com" >email</a>
+                      <a href="mailto:todo@footprintsofunseenhands.com" >email</a>
                     </div>
                     <!-- /mail -->
                   <!-- ts -->
                 <div class="flex-grow flex flex-col">
-                    <span id="datetime"></span>
+                    <span id="datetime">---</span>
                 </div>
                 <!-- /ts -->
            </div>

@@ -30,7 +30,6 @@
         window.location.reload();
       }
 
-
                 // create a function to update the date and time
                 function updateDateTime() {
                   // create a new `Date` object
@@ -38,9 +37,10 @@
                   const then = new Date();
 
                   // update the `textContent` property of the `span` element with the `id` of `datetime`
-                  document.querySelector('#datetime').textContent = now.getTime() / 1000 | 0;
+                  document.querySelector('#datetime').textContent = 1704585600 - (now.getTime() / 1000 | 0) ;
                 }
 
+                console.log(1704585600;
                 // call the `updateDateTime` function every second
                 setInterval(updateDateTime, 1000);
 
@@ -161,26 +161,26 @@ hands</a>
                 <!-- follow -->
                   <div class="flex-grow flex flex-col">
                     
-                    <a href="https://www.instagram.com/footprintsofunseenhands/" class="">instagram</a>
+                    <a href="https://www.instagram.com/footprintsofunseenhands/" class="" rel="me">instagram</a>
                     
-                    <a href="https://mastodon.ie/@footprintsofunseenhands" class="">mastodon</a>
+                    <a href="https://mastodon.ie/@footprintsofunseenhands" class="" rel="me">mastodon</a>
                     
-                    <a href="https://bsky.app/profile/unseenhands.bsky.social" class="">bluesky</a>
+                    <a href="https://bsky.app/profile/unseenhands.bsky.social" class="" rel="me">bluesky</a>
                     
-                    <a href="https://twitter.com" class="">rss</a>
+                    <a href="https://twitter.com" class="" rel="me">rss</a>
                     
-                    <a href="https://twitter.com" class="">x</a>
+                    <a href="https://twitter.com" class="" rel="me">x</a>
                     
                   </div>
                   <!-- /follow -->
                   <!-- mail -->
                     <div class="flex-grow flex flex-col">
-                      <a href="mailto:qc@footprintsofunseenhands.com" >email</a>
+                      <a href="mailto:todo@footprintsofunseenhands.com" >email</a>
                     </div>
                     <!-- /mail -->
                   <!-- ts -->
                 <div class="flex-grow flex flex-col">
-                    <span id="datetime"></span>
+                    <span id="datetime">---</span>
                 </div>
                 <!-- /ts -->
            </div>
