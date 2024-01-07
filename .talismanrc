@@ -1,4 +1,6 @@
 fileignoreconfig:
+- filename: docs/assets/main.js
+  checksum: 03c185e2bdceac26ad5eb82da7a8fcb4ae7845ef76d7855aae27b63daa1425e4
 - filename: docs/prints.xml
   checksum: 5353e877ed67b9b0e76ac97df20a9715b9b359a55a15e1cca2e5b997e20cbd2b
 version: "1.0"
