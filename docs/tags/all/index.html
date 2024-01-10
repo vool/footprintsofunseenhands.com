@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>tags</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/main.css"/>
+
+    <script>
+        // Remove this script if you don't need the dark mode toggle
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+
+        const toggleDarkMode = function () {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                document.documentElement.classList.add('dark')
+                localStorage.theme = 'dark'
+            }
+        };
+
+        const forgetPref = function () {
+            localStorage.removeItem('theme')
+            window.location.reload();
+        }
+
+        // create a function to update the date and time
+        function updateDateTime() {
+            // create a new `Date` object
+            const now = new Date();
+            const then = new Date();
+
+            // update the `textContent` property of the `span` element with the `id` of `datetime`
+            document.querySelector('#datetime').textContent = 1704240000 -(now.getTime() / 1000 | 0);
+        }
+
+        console.log(1704240000);
+        // call the `updateDateTime` function every second
+        setInterval(updateDateTime, 1000);
+
+
+    </script>
+</head>
+
+
+
+<body class="min-h-screen">
+
+<div class="container m-auto grid grid-cols-4 gap-1 text-white md:grid-cols-12">
+    <header class="col-span-full xbg-slate-600 p-4 sticky top-0 ">
+    <div class="flex text-stone-400">
+        <!-- l -->
+        <div class="flex-grow flex flex-col">
+            <a href="/" class="">footprints of unseen hands</a>
+            ---
+        </div>
+        <!-- /l -->
+        <div class="flex-grow flex flex-col">
+        </div>
+        <div class="flex-grow flex flex-col">
+        </div>
+        <!-- r -->
+        <div class="flex-grow flex flex-col text-right">
+            <span class="text-white">---</span>
+            ---
+        </div>
+        <!-- /r -->
+    </div>
+
+</header>
+
+    <aside class="col-span-4 xbg-slate-600 p-4 min-h-[calc(100vh-300px)]">
+    <p class="xfont-semibold text-stone-400 text-3xl tracking-tight">tags</p>
+    <p class="text-stone-200 xfont-semibold text-2xl tracking-tight">/tags</p>
+    <p class="text-stone-400">---
+    </p>
+</aside>
+<main class="col-span-4 xbg-slate-600 p-4 md:col-span-8">
+    <div >
+
+/??
+<h1>Tagged “all”</h1>
+
+<ol>
+
+
+  <li><a href="/"></a></li>
+
+  <li><a href="/tags/all/">tags</a></li>
+
+  <li><a href="/follow/">Contact</a></li>
+
+  <li><a href="/print/">prints</a></li>
+
+  <li><a href="/001/">goodiepal@50 tour</a></li>
+
+  <li><a href="/000/">first steps...</a></li>
+
+</ol>
+</div>
+</main>
+
+    <footer class="col-span-full xbg-slate-600 p-4 min-h-[120px]">
+    <div class="flex text-stone-400">
+        <!-- prints -->
+        <div class="flex-grow flex flex-col">
+            ---
+            
+            
+                <a href="/001/" class="hover:text-stone-600 ">/001</a>
+            
+                <a href="/000/" class="hover:text-stone-600 ">/000</a>
+            
+        </div>
+        <!-- /prints -->
+        <!-- follow -->
+        <div class="flex-grow flex flex-col">
+            ---
+            
+                <a href="https://www.instagram.com/footprintsofunseenhands/" class="" rel="me">instagram</a>
+            
+                <a href="https://mastodon.ie/@footprintsofunseenhands" class="" rel="me">mastodon</a>
+            
+                <a href="https://bsky.app/profile/unseenhands.bsky.social" class="" rel="me">bluesky</a>
+            
+                <a href="/prints.xml" class="" rel="me">rss</a>
+            
+        </div>
+        <!-- /follow -->
+        <!-- mail -->
+        <div class="flex-grow flex flex-col">
+            ---
+            <a href="mailto:todo@footprintsofunseenhands.com" >email</a>
+        </div>
+        <!-- /mail -->
+        <!-- ts -->
+        <div class="flex-grow flex flex-col text-right">
+            ---
+            <span id="datetime">---</span>
+        </div>
+        <!-- /ts -->
+    </div>
+
+</footer>
+
+</div>
+
+</body>
+</html>

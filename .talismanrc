@@ -1,0 +1,14 @@
+fileignoreconfig:
+- filename: docs/000/index.html
+  checksum: 9c7e0c3ce50f6510e1ccd660213a320ef53912210689caf0933a404417971958
+- filename: docs/001/index.html
+  checksum: ee6564d24b476c4df329371cc6e6a87e7540beb92a3e7ce29898d879b8bea3a7
+- filename: docs/003/index.html
+  checksum: efa63ad3198313626747da87e5e5ea5632ace4eb498a5bda05e2f49044ec6cd5
+- filename: docs/assets/main.css
+  checksum: 49669000d589c7b505c629b167bca1ebd2297f291af9d6b59cfb4884b46e0c35
+- filename: docs/assets/main.js
+  checksum: 03c185e2bdceac26ad5eb82da7a8fcb4ae7845ef76d7855aae27b63daa1425e4
+- filename: docs/prints.xml
+  checksum: 5353e877ed67b9b0e76ac97df20a9715b9b359a55a15e1cca2e5b997e20cbd2b
+version: "1.0"
