@@ -8,14 +8,14 @@
   <id>https://footprintsofunseenhands.com</id>
   <author>
     <name>Boyle Roche</name>
-    <email>todo@footprintsofunseenhands.com</email>
+    <email>someone@footprintsofunseenhands.com</email>
   </author>
   <entry>
     <title>goodiepal@50 tour</title>
     <link href="/001/"/>
     <updated>2024-01-03T00:00:00Z</updated>
     <id>/001/</id>
-    <content xml:lang="en" type="html">&lt;img class=&quot;mt-8&quot; src=&quot;/img/gp.png&quot; alt=&quot;&quot; /&gt;
+    <content xml:lang="en" type="html">&lt;img src=&quot;/img/gp.png&quot; alt=&quot;&quot; /&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Maverick Danish/Faroese musician, composer, artist, educator, activist, hacker and trickster; &lt;strong&gt;Goodiepal&lt;/strong&gt; turns 50 this month and to celebrate, we have organised a trip to Ireland where he will be performing in Dublin, Kerry, Cork and Limerick.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -55,10 +55,10 @@
 &lt;td&gt;&lt;a href=&quot;https://plugdrecords.com/collections/events/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;⟶&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&quot;https://ormstonhouse.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Ormston House&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://ormstonhouse.com/goodiepal/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Ormston House&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Limerick&lt;/td&gt;
 &lt;td&gt;Sunday 28th January&lt;/td&gt;
-&lt;td&gt;&lt;a href=&quot;https://ormstonhouse.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;⟶&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://ormstonhouse.com/goodiepal/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;⟶&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
@@ -76,7 +76,10 @@
     <link href="/000/"/>
     <updated>2024-01-03T00:00:00Z</updated>
     <id>/000/</id>
-    <content xml:lang="en" type="html">&lt;table&gt;
+    <content xml:lang="en" type="html"> &lt;p class=&quot;lead prose-xl&quot;&gt;
+  All along the untrodden paths of the future...
+&lt;/p&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;&lt;/th&gt;
@@ -90,7 +93,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;email&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&quot;https://nonfaction.com/events/goodiepal/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;⟶&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;mailto:someone@footprintsofunseenhands.com&quot;&gt;⟶&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;instagram&lt;/strong&gt;&lt;/td&gt;
