@@ -1010,6 +1010,10 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1036,6 +1040,9 @@ video {
 }
 .h-5 {
   height: 1.25rem;
+}
+.h-px {
+  height: 1px;
 }
 .h-screen {
   height: 100vh;
